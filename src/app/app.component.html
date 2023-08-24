@@ -11,14 +11,11 @@
 <div class="content" role="main">
 
   <!-- username -->
-  <div class="card highlight-card card-small">
-    <button class="rocket">
+  <div class="card highlight-card card-small" [formGroup]="fg">
+    <button [disabled]="!isFormValid(fg)" type="submit" class="play-button btn btn-danger" title="play scrum poker">
       <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678"
            viewBox="0 0 101.678 101.678">
-        <title>Rocket Ship</title>
-
         <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
-
           <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
             <path id="Path_33" data-name="Path 33"
                   d="M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z"
@@ -38,11 +35,11 @@
             d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z"
             transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
     </svg>
-    <input type="text" class="form-control" id="username" placeholder="Enter username">
+    <input type="text" class="form-control" id="username" formControlName="username" placeholder="Enter username">
   </div>
 
   <h5>How to play</h5>
-  <p>Enter your username in the box and push the red button</p>
+  <p>Enter your username in the box and push the play button</p>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

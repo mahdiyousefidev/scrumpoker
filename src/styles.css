@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.btn:disabled {
+  opacity: 1;
+  background-color: #6f6f6f;
+}
+
+.btn-danger{
+  background:  #dd0031;
+}
