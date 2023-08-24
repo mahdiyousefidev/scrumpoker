@@ -1,0 +1,8 @@
+<div class="row mt-4">
+  <div *ngFor="let card of cards" class="col-sm-2">
+    <div class="card">
+      <span class="name">{{card.owner.name}}</span>
+      <span class="value" *ngIf="isValueVisible">{{card.value}}</span>
+    </div>
+  </div>
+</div>

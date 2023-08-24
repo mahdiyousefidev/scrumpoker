@@ -7,19 +7,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent extends BaseValidation implements OnInit{
+export class AppComponent {
   title = 'scrumpoker';
-  fg!:FormGroup;
 
-  ngOnInit(): void {
-    this.initializeForm();
-  }
-
-  initializeForm(){
-    this.fg=new FormGroup({
-      username: new FormControl('',[
-        Validators.required
-      ])
-    })
-  }
 }

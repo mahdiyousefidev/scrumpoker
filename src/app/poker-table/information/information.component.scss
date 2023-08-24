@@ -1,0 +1,23 @@
+.readonly-input {
+  border: none;
+  padding-left: 10px;
+}
+
+
+.information{
+display: flex;
+
+  i{
+    width: 50px;
+  }
+  .title {
+    font-size: 1.2em;
+    width: 100%;
+    display: block;
+  }
+
+  .value {
+    font-size: 0.9em;
+    color: #666;
+  }
+}
